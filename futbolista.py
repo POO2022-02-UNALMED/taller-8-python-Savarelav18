@@ -14,11 +14,11 @@ class Futbolista(Persona,Deportista):
     def __str__(self):
         return f"Mi nombre es {Persona.getNombre} soy profesional en el deporte {Deportista.getDeporte} Tengo {Persona.getEdad} años de edad y llevo {Deportista.getAñosParticipando} años en el deporte"
     
-    def getAñosPracticando(self):
-        return self._añosPracticando
+    def getTarjetasRojas(self):
+        return self._tarjetasRojas
     
-    def setAñosPracticando(self,añosPracticando):
-        self._añosPracticando=añosPracticando
+    def setTarjetasRojas(self,tarjetasRojas):
+        self._tarjetasRojas=tarjetasRojas
     
     def getGolesMarcados(self):
         return self._golesMarcados
@@ -33,11 +33,11 @@ class Futbolista(Persona,Deportista):
         self._piernaHabil=piernaHabil
     
     @classmethod
-    def setPiernaHabil(clc,listaFutbolistas):
+    def setListaFutbolistas(clc,listaFutbolistas):
         clc.listaFutbolistas=listaFutbolistas
 
     @classmethod
-    def getPiernaHabil(clc):
+    def getListaFutbolistas(clc):
         return clc.listaFutbolistas
     
     
