@@ -12,7 +12,7 @@ class Futbolista(Persona,Deportista):
         self.listaFutbolistas.append(self)
     
     def __str__(self):
-        return f"Mi nombre es {Persona.getNombre} soy profesional en el deporte {Deportista.getDeporte} Tengo {Persona.getEdad} años de edad y llevo {Deportista.getAñosPracticando} años en el deporte"
+        return f"Mi nombre es {Persona.getNombre()} soy profesional en el deporte {Deportista.getDeporte()} Tengo {Persona.getEdad()} años de edad y llevo {Deportista.getAñosPracticando()} años en el deporte"
     
     def getTarjetasRojas(self):
         return self._tarjetasRojas
